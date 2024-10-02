@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+    <h1>Student Management System</h1>
+    </header>
+<!-- <div>
+    
+    <br>
+    <div id="data-container">
+    </div>
+
+    
+    <button id="fetch-data-button">All Students</button>
+</div> -->
+<div id="buttons">
+<button id="show-data-section" class="btn btn-primary">Show All Students</button>
+<button id="show-add-form" class="btn btn-success">Show Add New Student Form</button>
+<button id="show-delete-section" class="btn btn-danger">Show Delete Student Section</button>
+<button id="show-update-section" class="btn btn-warning">Show Update Student Section</button>
+<div>
+<div id="data-section">
+    <table id="data-table" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>CNIC</th>
+                <th>Course</th>
+                <th>Grade</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody id="data-container">
+            <!-- Data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Button to fetch data -->
+    <button id="fetch-data-button" class="btn btn-primary">All Students</button>
+</div>
+
+<div id="add-form-section">
+  <!-- Form for adding data -->
+  <form id="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="CNIC">CNIC</label>
+    <input type="text" id="CNIC" name="CNIC" required>
+    <br>
+    <label for="Course">Course</label>
+    <input type="text" id="Course" name="Course" required>
+    <br>
+    <label for="Grade">Grade</label>
+    <input type="text" id="Grade" name="Grade" required>
+    <br>
+    <label for="GPA">GPA</label>
+    <input type="number" id="GPA" name="GPA" required>
+    <br>
+    <button type="submit">Add New Student</button>
+</form>
+</div>
+
+<div id="delete-section">
+    <form id="form">
+    <input type="number" id="delete-id" placeholder="Enter ID to delete">
+    <button id="delete-button">Delete Student</button>
+</form>
+</div>
+
+   
+<div id="update-section">
+    <form id="form">
+<input class="inp" type="number" id="update-id" placeholder="Enter new ID">
+<input class="inp" type="text" id="update-name" placeholder="Enter new name"> <!-- Added this field -->
+<input class="inp" type="text" id="update-cnic" placeholder="Enter new cnic">
+<input class="inp" type="text" id="update-course" placeholder="Enter new course">
+<input class="inp" type="text" id="update-grade" placeholder="Enter new grade">
+<input class="inp" type="number" id="update-gpa" placeholder="Enter new gpa">
+<button id="update-button">Update Student</button>
+</form>
+
+</body>
+</html>
