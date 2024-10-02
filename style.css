@@ -1,0 +1,206 @@
+
+/* style.css */
+
+/* General styling for the body */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #28784e;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: #1c4530;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+
+button {
+  margin: 5px;
+}
+
+/* Styling for the buttons */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-success {
+  background-color: brown;
+  color: white;
+}
+
+#buttons {
+  align-items: center;
+  padding: 20px;
+  margin-left: 110px;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.btn-warning {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e67e22;
+}
+
+/* Styling for the form section */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 5px solid black;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#update-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#delete-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover,
+#delete-button:hover,
+#update-button:hover {
+  background-color: #2980b9;
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #2c3e50;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hide sections initially */
+#data-section,
+#add-form-section,
+#delete-section,
+#update-section {
+  display: none;
+  margin-right: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form,
+  table {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
